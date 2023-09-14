@@ -1,0 +1,447 @@
+body{
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Markazi Text', serif;
+}
+
+li{
+  list-style: none;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+nav{
+  z-index: 10001;
+}
+
+
+.navbar {
+  padding: 10px 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 1em;
+}
+
+nav ul li a{
+  color: #000;
+}
+
+nav ul li a:hover{
+  text-decoration: underline solid #495E57;
+  
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links.visible {
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 100%;
+  background-color: #495E57;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* header section */
+
+.header {
+  background-color: #495e57;
+  padding: 40px 0;
+}
+
+.header section {
+color: #EDEFEE;
+padding: 10px 13%;
+position: relative;
+}
+
+
+h2 {
+  color: #F4CE14;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.banner p {
+  font-size: 20px;
+  max-width: 520px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #F4CE14;
+  color: black;
+  padding: 14px 18px;
+  border: none;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.banner-img{
+  position: absolute;
+  right: 13%;
+  top: 5%;
+  width: 400px;
+}
+
+.banner-img img {
+  width: 100%;
+  height: 450px;
+  border-radius: 20px;
+}
+
+
+form, .confirm{
+  padding: 10px 13%;
+}
+
+
+form fieldset {
+  background-color: white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  text-align: center;
+}
+
+input, label{
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+
+#book-date, #book-time, #book-guests, #book-occasion{
+  background: #EDEFEE;
+  color:#495e57;
+  font-weight: 700;
+  padding: 10px 24px;
+  width: 200px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#submit{
+  padding: 12px 16px;
+  font-weight: 900;
+  margin-top: 20px;
+  background: #495e57;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  background-color: #a9c8be;
+  color:#495E57;
+}
+
+.form-container{
+  background-color: #495E57;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.confirm{
+  padding-top: 40px;
+  background-color: #495E57;
+  color: white;
+  text-align: center;
+  height: 200px;
+}
+
+
+/* menu items */
+
+.menu-container{
+  margin: 110px auto;
+  padding: 10px 13%;
+}
+
+.menu-container h2{
+  color: #000;
+}
+
+.menu-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cards{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+}
+
+.menu-items{
+  /* height: 400px; */
+  width: 350px;
+  background: #a9c8be;
+  border-radius: 8px;
+}
+
+.menu-container img{
+  width: 100%;
+  height: 233px;
+  border-radius: 8px;
+}
+
+.menu-content{
+  padding: 10px 15px;
+}
+
+
+.menu-content .heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderbtn{
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.testimonials-container {
+  background-color: #EE9972;
+  height: 400px;
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonials {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  align-items:flex-start;
+  justify-content: space-between;
+}
+
+.testimonial {
+  gap: 2rem 1rem;
+}
+
+.about {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.about-copy {
+  width: 50%;
+  margin-right: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.about-images {
+  width: 50%;
+  margin-left: 20px;
+  padding-bottom: 40px;
+}
+
+.about h2 {
+  font-size: 48px;
+  color: #000;
+}
+
+.about p {
+  font-size: 24px;
+}
+
+.aboutimg1 {
+  position: absolute;
+  z-index: 3;
+}
+
+.aboutimg2 {
+  position: relative;
+  top: 50px;
+  left: -50px;
+}
+
+
+footer section{
+  padding: 10px 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.company-info img{
+  margin-top: 12px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.company-info p{
+  width: 320px;
+}
+
+footer h3{
+  font-size: 18px;
+}
+
+footer ul{
+  padding: 0;
+}
+
+footer ul li{
+  padding: 8px 0;
+}
+
+.form-container h2 {
+text-align: center;
+}
+
+.form-date {
+  background-color: #495e57;
+}
+
+
+@media screen and (max-width: 768px){
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.visible {
+    display: flex;
+    background: #333333;
+    z-index: 1000;
+    padding: 20px 0;
+  }
+
+  .navbar{
+    background:#fff;
+    padding: 10px 8%;
+  }
+
+  nav ul li a{
+    color: #fff;
+  }
+
+  .bar{
+    background: #333333;
+  }
+
+  .banner-img{
+    display: none;
+  }
+
+  form, .confirm{
+    padding: 10px 8%;
+  }
+
+
+  .header section, .menu-container{
+    padding: 10px 8%;
+  }
+  .menu-container{
+    margin: 20px 0;
+  }
+  .menu-header{
+    justify-content: flex-start;
+  }
+
+  .menu-items{
+    width: 100%;
+  }
+
+  .testimonials-container{
+    height: fit-content;
+  }
+
+  .testimonials{
+    justify-content: center;
+    display: block;
+    width: 75%;
+  }
+
+  .testimonial{
+    width: 50%;
+    display:inline-block;
+  }
+
+  .about{
+    display: block;
+    padding: 40px;
+  }
+
+  .about-copy {
+    width: 90%;
+    text-align: center;
+  }
+
+  .about-images{
+    width: 90%;
+    padding-left: 20px;
+  }
+
+  footer section{
+    padding: 10px 8%;
+    flex-direction: column;
+  }
+  .company-info p{
+    width: 100%;
+  }
+}
+
+.hidden{
+  display: none;
+}
